@@ -1,0 +1,84 @@
+body{
+    width: 2000px;
+}
+
+#caixa{
+    width: 500px;
+    height: 500px;
+}
+
+
+@media screen and (max-width: 1920px) {
+	
+    #caixa{
+        background-color: yellow;
+    }
+
+    h1::before{
+        content: "Yellow";
+    }
+}
+
+@media screen and (max-width: 1366px) {
+	
+	#caixa{
+        background-color: purple;
+    }
+
+    h1::before{
+        content: "Purple";
+    }
+}
+@media screen and (max-width: 1080px) {
+	
+	#caixa{
+        background-color: red;
+    }
+
+    h1::before{
+        content: "Red";
+    }
+}
+
+@media screen and (max-width: 1024px) {
+	
+	#caixa{
+        background-color: pink;
+    }
+
+    h1::before{
+        content: "Pink";
+    }
+}
+
+@media screen and (max-width: 768px) {
+	
+	#caixa{
+        background-color: orange;
+
+    }
+
+    h1::before{
+        content: "Orange";
+    }
+
+}
+
+
+@media screen and (max-width: 420px) {
+	
+	#caixa{
+        background-color: gray;
+    }
+
+    h1::before{
+        content: "Gray";
+    }
+
+}
+
+
+
+
+
+
