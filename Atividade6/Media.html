@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Média alunos</title>
+    <script src="Media.js"></script>
+
+    <style>
+        form{
+            background-color: bisque;
+            width: 400px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome"><br><br>
+
+        <label for="nota1">Nota 1:</label>
+        <input type="text" id="nota1"><br><br>
+
+        <label for="nota2">Nota 2:</label>
+        <input type="text" id="nota2"><br><br>
+
+        <label for="nota3">Nota 3:</label>
+        <input type="text" id="nota3"><br><br>
+
+        <button type="button" onclick="calcularMedia()">Calcular média</button><br><br>
+
+        <label for="media">Média:</label>
+        <input type="text" id="media" disabled>
+    </form>
+</body>
+
+</html>
