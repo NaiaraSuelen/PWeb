@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Abra a Janela</title>
+    <style>
+        #janela-fechada {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Abra a Janela</h1>
+    <img id="janela-fechada" src="janela-fechada.png" alt="Janela Fechada">
+    <script>
+        var janelaFechada = document.getElementById("janela-fechada");
+        janelaFechada.addEventListener("mouseover", function () {
+            janelaFechada.src = "janelaaberta.png";
+        });
+        janelaFechada.addEventListener("mouseout", function () {
+            janelaFechada.src = "janelafechada.png";
+        });
+        janelaFechada.addEventListener("click", function () {
+            janelaFechada.src = "janelaquebrada.png";
+            janelaFechada.removeEventListener("mouseover");
+            janelaFechada.removeEventListener("mouseout");
+            janelaFechada.removeEventListener("click");
+        });
+    </script>
+</body>
+
+</html>
