@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <script src="formulario.js"></script>
+</head>
+
+<body>
+    <form name="form">
+        <label for="nome">Nome:</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="comentario">Comentário:</label>
+        <textarea cols="30" rows="5" name="comentario" id="comentario"></textarea>
+        <br><br>
+        
+        <h1>Pesquisa</h1>
+        <label for="sim">sim</label>
+        <input type="radio" name="opcao" id="sim" value="sim">
+        <label for="nao">nao</label>
+        <input type="radio" name="opcao" id="nao" value="nao">
+        <br><br>
+        <button type="submit" value="Enviar" onclick="validar()">Enviar</button>
+    </form>
+</body>
+</html>
