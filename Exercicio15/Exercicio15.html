@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cursos da Fatec Sorocaba</title>
+    <script>
+      function abrirCurso() {
+        var curso = document.getElementById("cursos").value;
+        var confirma = confirm("Você deseja abrir a janela com o curso de " + curso + "?");
+        if (confirma) {
+          var largura = 600;
+          var altura = 300;
+          var esquerda = (screen.width - largura) / 2;
+          var topo = (screen.height - altura) / 2;
+          window.open(curso + ".html", "", "width=" + largura + ",height=" + altura + ",left=" + esquerda + ",top=" + topo);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Cursos da Fatec Sorocaba</h1>
+    <p>Escolha um curso:</p>
+    <select id="cursos" onchange="abrirCurso()">
+      <option value="fabricacao-mecanica">Fabricação Mecânica</option>
+      <option value="projetos-mecanico">Projetos Mecânicos</option>
+      <option value="gestao-empresarial">Gestão Empresarial</option>
+      <option value="logistica">Logística</option>
+      <option value="processos-metalurgicos">Processos Metalúrgicos</option>
+      <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+      <option value="eletronica-automotiva">Eletrônica Automotiva</option>
+    </select>
+  </body>
+</html>
